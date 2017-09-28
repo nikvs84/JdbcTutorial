@@ -87,6 +87,8 @@ public class AddressService extends Util implements AddressDAO {
             preparedStatement.setString(3, address.getStreet());
             preparedStatement.setString(4, address.getPostCode());
             preparedStatement.setLong(5, address.getId());
+
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -97,6 +99,8 @@ public class AddressService extends Util implements AddressDAO {
 
         try (PreparedStatement preparedStatement = getConnection().prepareStatement(sql)) {
             preparedStatement.setLong(1, address.getId());
+
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
