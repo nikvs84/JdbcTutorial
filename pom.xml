@@ -16,7 +16,11 @@
             <version>1.4.196</version>
             <!--<scope>test</scope>-->
         </dependency>
-
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>
