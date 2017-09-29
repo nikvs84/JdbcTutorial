@@ -41,7 +41,7 @@ public class AddressService extends Util implements AddressDAO {
                 address.setId(resultSet.getLong("ID"));
                 address.setCountry(resultSet.getString("COUNTRY"));
                 address.setCity(resultSet.getString("CITY"));
-                address.setStreet(resultSet.getString("STREEY"));
+                address.setStreet(resultSet.getString("STREET"));
                 address.setPostCode(resultSet.getString("POST_CODE"));
 
                 result.add(address);
@@ -68,7 +68,7 @@ public class AddressService extends Util implements AddressDAO {
                 result.setId(resultSet.getLong("ID"));
                 result.setCountry(resultSet.getString("COUNTRY"));
                 result.setCity(resultSet.getString("CITY"));
-                result.setStreet(resultSet.getString("STREEY"));
+                result.setStreet(resultSet.getString("STREET"));
                 result.setPostCode(resultSet.getString("POST_CODE"));
             }
         } catch (SQLException e) {
